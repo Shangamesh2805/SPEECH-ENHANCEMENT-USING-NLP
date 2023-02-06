@@ -14,4 +14,17 @@ perform useful tasks.
 summarization, user interfaces, multilingual and cross language information retrieval (CLIR), speech recognition, artificial intelligence(AI) and expert systems.
 
 **OBJECTIVE OF OUR PROJECT:**
-    We used NLP in education field  to improve the vocabulary skills  of the students using speech regonition and checking the similarity of the speech from the orginal  content of the speech using NLP. 
+
+We used NLP in education field  to improve the vocabulary skills of the students. By identifying the mistakes of students in their pronounciation we help them to rectify their mistakes by themselves.
+
+**Libraries Used:**
+   •
+    
+**WORK FLOW:**
+
+• Our project first gets the audio input and text input from the user/student.
+
+• Then we process the audio file into into a standard .wav format to get accurate result.
+
+• 
+
