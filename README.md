@@ -18,7 +18,11 @@ summarization, user interfaces, multilingual and cross language information retr
 We used NLP in education field  to improve the vocabulary skills of the students. By identifying the mistakes of students in their pronounciation we help them to rectify their mistakes by themselves.
 
 **Libraries Used:**
-   •
+•pyaudio 
+•numpy
+•Speech-recognition
+•pyttsx3
+•pipwin
     
 **WORK FLOW:**
 
@@ -26,5 +30,11 @@ We used NLP in education field  to improve the vocabulary skills of the students
 
 • Then we process the audio file into into a standard .wav format to get accurate result.
 
-• 
+• We convert the audio file into a .txt file using Speech_recognition module.
+
+•Then the converted .txt file is checked with the existing input .txt file from user.
+
+•After checking word by word we predict the similarity between two files and conclude the result of accuracy the student speaked.
+
+•Our project also tells the incorrect words in the files, which helps the user to correct his mistakes.
 
