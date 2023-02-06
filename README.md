@@ -18,10 +18,15 @@ summarization, user interfaces, multilingual and cross language information retr
 We used NLP in education field  to improve the vocabulary skills of the students. By identifying the mistakes of students in their pronounciation we help them to rectify their mistakes by themselves.
 
 **Libraries Used:**
+
 •pyaudio 
+
 •numpy
+
 •Speech-recognition
+
 •pyttsx3
+
 •pipwin
     
 **WORK FLOW:**
