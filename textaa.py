@@ -20,6 +20,7 @@ pip install pyttsx3
 
 
 # importing libraries 
+
 import speech_recognition as sr 
 import os 
 import gtts 
@@ -32,6 +33,7 @@ r = sr.Recognizer()
 
 # a function that splits the audio file into chunks
 # and applies speech recognition
+
 def get_large_audio_transcription(path):
     """
     Splitting the large audio file into chunks
