@@ -15,7 +15,7 @@ summarization, user interfaces, multilingual and cross language information retr
 
 **OBJECTIVE OF OUR PROJECT:**
 
-We used NLP in education field  to improve the vocabulary skills of the students. By identifying the mistakes of students in their pronounciation we help them to rectify their mistakes by themselves.
+We used NLP in education field  to improve the vocabulary skills of the students. By identifying the mistakes of students in their pronounciation and  we help them to rectify their mistakes by themselves.
 
 **Libraries Used:**
 
@@ -28,18 +28,34 @@ We used NLP in education field  to improve the vocabulary skills of the students
 •pyttsx3
 
 •pipwin
+
+•nlp
+
+•transformers
+
+•pytorch
+
+•fasttext
+
+•nltk-punkt
+
     
 **WORK FLOW:**
 
-• Our project first gets the audio input and text input from the user/student.
+• Installl all the above mentioned libaries into the python environment.
 
-• Then we process the audio file into into a standard .wav format to get accurate result.
+• Then feed the project first with the audio input and text input from the user/student.
 
-• We convert the audio file into a .txt file using Speech_recognition module.
+• Then we process the audio file into into a standard .wav format and .pdf file into a text .txt file to get better result.
 
-•Then the converted .txt file is checked with the existing input .txt file from user.
+• Once after conversion of respective files, using speech_recogniser we convert the audio file into a txt file.
 
-•After checking word by word we predict the similarity between two files and conclude the result of accuracy the student speaked.
+• Once the text data is stored we need check the similarity between converted text data with actual input text file given using NLP before that we need remove punctuations in the data.
 
-•Our project also tells the incorrect words in the files, which helps the user to correct his mistakes.
+• To remove punctuations we use regrex module and we remove all special chracters from the actual input given.
 
+•Then the converted text data  is checked the actual text data using BertModel from NLP.
+
+•BertModel it first tokenise the each word in the text file into tokens using "BertTokenizer" and after that it converts each tokens to vector representations known as "Wordembedddings".
+
+•Once after that each converted vector representatuons are compared with respecteive representations and finallly percentage result 
