@@ -13,9 +13,25 @@ pip install SpeechRecognition pydub
 
 pip install gTTS
 
+pip install PYPDF2
+
 pip install playsound
 
 pip install pyttsx3
+
+pip install pipwin
+
+pip install SpeechRecognition
+
+pip install pyaudio
+
+pip install nlp
+
+pip install torch
+
+pip install fasttext
+
+pip install transformers
 
 
 
@@ -23,6 +39,8 @@ pip install pyttsx3
 
 import speech_recognition as sr 
 import os 
+import nltk
+nltk.download('punkt')
 import gtts 
 from pydub import AudioSegment
 from pydub.silence import split_on_silence 
@@ -56,6 +74,18 @@ def get_large_audio_transcription(path):
         os.mkdir(folder_name)
     whole_text = ""
     # process each chunk 
+    from PyPDF2 import PdfReader
+
+    def pdf_to_txt(input_path, output_path):
+        with open(input_path, 'rb') as file:
+            pdf = PdfReader(file)
+            text = ''
+            for page in pdf.pages:
+                text += page.extract_text()
+
+        with open(output_path, 'w', encoding='utf-8') as file:
+            file.write(text)
+    pdf_to_txt('/content/txt_file.pdf', '/content/txt_file.txt')
     for i, audio_chunk in enumerate(chunks, start=1):
         # export audio chunk and save it in
         # the `folder_name` directory.
