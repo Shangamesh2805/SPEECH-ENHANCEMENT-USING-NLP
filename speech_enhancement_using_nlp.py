@@ -177,7 +177,7 @@ convert_file_to_single_line(input_file_path, output_file_path)
 
 import numpy as np
 data = np.loadtxt("/content/txt_file1.txt",dtype='str')
-string="".join(data)
+string=" ".join(data)
 
 #printing  words by line by line from original text file-
 
